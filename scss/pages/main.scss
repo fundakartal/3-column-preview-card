@@ -1,0 +1,137 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  width: 100%;
+  min-height: 100vh;
+  color: $color-Very-light-gray;
+  font-weight: 500;
+  background-color: $color-Very-light-gray;
+}
+
+.Card {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  @include mq('tablet') {
+    margin-top: 0;
+    max-width: 950px;
+  }
+
+  &-item {
+    padding: 4rem;
+    flex: 1 0 90%;
+    @include mq('tablet') {
+      padding: 4rem 2rem;
+      flex:1 0 calc(100% / 3);
+    }
+    @include mq('desktop') {
+      padding: 5rem;
+      flex:1 0 calc(100% / 3);
+    }
+    &:nth-child(1) {
+      background-color: $color-Bright-orange;
+    }
+    &:nth-child(2) {
+      background-color: $color-Dark-cyan;
+    }
+    &:nth-child(3) {
+      background-color: $color-Very-dark-cyan;
+    }
+  }
+  &-header {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  &-text {
+    color: $color-Transparent-white;
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 2.5rem;
+    opacity: .8;
+    @include mq('tablet') {
+      height: 125px;
+    }
+  }
+}
+
+.button {
+  font-family: 'Lexend Deca', sans-serif;
+  border: 2px solid transparent;
+  padding: 1.5rem 3rem;
+  border-radius: 2.5rem;
+  background-color: $color-Very-light-gray; 
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 3rem;
+  transition: all .4s linear;
+  &:hover {
+    border-color: $color-Very-light-gray;
+    color: $color-Very-light-gray;
+  }
+  &-orange {
+    color: $color-Bright-orange;
+    &:hover {
+      background-color: inherit;
+    }
+  }
+  &-dark-cyan {
+    color: $color-Dark-cyan;
+    &:hover {
+      background-color: inherit;
+    }
+  }
+  &-very-dark-cyan {
+    color: $color-Very-dark-cyan;
+    &:hover {
+      background-color: inherit;
+    }
+  }
+  @include mq('tablet') {
+    margin-top: 5rem;
+  }
+  @include mq('desktop') {
+    margin-top: 8rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  bottom: 1rem;
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: $color-Very-dark-cyan;
+  font-family: 'Lexend Deca', sans-serif;
+  @include mq('tablet') {
+    position: absolute;
+    bottom: 1rem;
+  }
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
