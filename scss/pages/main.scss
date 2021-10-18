@@ -20,7 +20,7 @@ body {
   min-height: 100vh;
   color: $color-Very-light-gray;
   font-weight: 500;
-  background-color: $color-Very-light-gray;
+  background-color: currentColor;
 }
 
 .Card {
@@ -46,7 +46,6 @@ body {
     }
     @include mq('desktop') {
       padding: 5rem;
-      flex:1 0 calc(100% / 3);
     }
     &:nth-child(1) {
       background-color: $color-Bright-orange;
