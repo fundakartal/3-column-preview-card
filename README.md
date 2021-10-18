@@ -10,7 +10,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -23,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./images/ss.svg)
+![screenshot](./images/ss.png)
 
 ### Links
 
 - Solution URL: [ ]( )
-- Live Site URL: [ ]( )
+- Live Site URL: [https://fundakartal.github.io/3-column-preview-card/](https://fundakartal.github.io/3-column-preview-card/)
 
 ## My process
 
